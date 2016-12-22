@@ -7,7 +7,7 @@ Pod::Spec.new do |s|
                         This client has been tested with the Faye (http://faye.jcoglan.com) implementation of the
                         Bayeux protocol. Currently only supports Websocket transport.
                        DESC
-  s.homepage         = "https://github.com/babicvojko/FayeSwift/blob/master/FayeSwift.podspec"
+  s.homepage         = "https://github.com/babicvojko/FayeSwift"
   s.license          = "MIT"
   s.author           = { "Haris Amin" => "aminharis7@gmail.com" }
   s.source           = { :git => "https://github.com/babicvojko/FayeSwift.git", :tag => s.version.to_s }
@@ -17,6 +17,6 @@ Pod::Spec.new do |s|
   s.ios.deployment_target = "8.0"
   s.tvos.deployment_target = "9.0"
   s.source_files = "Sources/*.swift"
-  s.dependency "Starscream"
+  s.dependency "Starscream",'1.1.3'
   s.dependency "SwiftyJSON"
 end
